@@ -1,4 +1,3 @@
-import AboutSectionOne from "@/components/About/AboutSectionOne";
 import Brands from "@/components/Brands";
 import ScrollUp from "@/components/Common/ScrollUp";
 import Features from "@/components/Features";
