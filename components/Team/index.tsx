@@ -2,7 +2,7 @@ import teamData from './teamData';
 
 const Team = () => {
     return (
-        <section className='grid grid-cols-1 sm:grid-cols-2 gap-16 xl:gap-44 transition-all max-w-sm sm:max-w-3xl xl:max-w-4xl mx-auto px-4 py-20'>
+        <section className='grid grid-cols-1 sm:grid-cols-2 gap-8 xl:gap-24 transition-all max-w-sm sm:max-w-3xl xl:max-w-4xl mx-auto px-10 py-20'>
             {teamData.map((member, index) => (
                 <TeamMember key={index} {...member} />
             ))}
