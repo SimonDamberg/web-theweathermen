@@ -1,20 +1,31 @@
+import SectionTitle from '../Common/SectionTitle';
 import teamData from './teamData';
 
 const Team = () => {
     return (
-        <section className='grid grid-cols-1 sm:grid-cols-2 gap-8 xl:gap-24 transition-all max-w-sm sm:max-w-3xl xl:max-w-4xl mx-auto px-10 py-20'>
-            {teamData.map((member, index) => (
-                <TeamMember key={index} {...member} />
-            ))}
-          
-        </section>
+        <>
+            <div className="mt-10">
+                <SectionTitle
+                    title="Team"
+                    paragraph="We are a group of 5th year MSc. Software Engineering students from the Uppsala University, studying the course Software Engineerimg Project (1DL650)."
+                    center
+                    mb='0px'
+                />
+            </div>
+            <section className='grid grid-cols-1 sm:grid-cols-2 gap-8 xl:gap-24 transition-all max-w-sm sm:max-w-3xl xl:max-w-4xl mx-auto px-10 py-20'>
+                {teamData.map((member, index) => (
+                    <TeamMember key={index} {...member} />
+                ))}
+
+            </section>
+        </>
     )
 }
 
 interface ITeamMemberProps {
     name: string;
     title: string;
-    image?: string;   
+    image?: string;
     color?: string;
     email?: string;
     linkedin?: string;
@@ -28,7 +39,7 @@ const TeamMember: React.FC<ITeamMemberProps> = (props) => {
             </div>
             <h1 className={`text-3xl mt-3 text-center text-slate-900`}>{name}</h1>
             <p className={`mt-1 text-center mb-2 italic`}>{title}</p>{email &&
-                <p className='text-center text-md'>{email }</p>
+                <p className='text-center text-md'>{email}</p>
             }
         </a>
     )
