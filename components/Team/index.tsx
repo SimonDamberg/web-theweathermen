@@ -7,7 +7,7 @@ const Team = () => {
             <div className="mt-10">
                 <SectionTitle
                     title="Team"
-                    paragraph="We are a group of 5th year MSc. Software Engineering students from the Uppsala University, studying the course Software Engineerimg Project (1DL650)."
+                    paragraph="We are a group of 5th year MSc. Software Engineering students from the Uppsala University, studying the course Software Engineering Project (1DL650)."
                     center
                     mb='0px'
                 />
