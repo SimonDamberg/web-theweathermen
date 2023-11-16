@@ -1,4 +1,6 @@
 import Link from "next/link";
+import Image from 'next/image'
+
 
 const Hero = () => {
   return (
@@ -14,10 +16,13 @@ const Hero = () => {
                 className="wow fadeInUp mx-auto max-w-[800px] text-center"
                 data-wow-delay=".2s"
               >
-                <h1 className="mb-5 text-5xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
-                  The Weathermen
-                </h1>
-                <p className="dark:text-body-color-dark mb-12 text-base !leading-relaxed text-body-color sm:text-lg md:text-xl">
+                <Image className="mb-20 mx-auto"
+                  src="/images/logo/logo.png"
+                  width={500}
+                  height={500}
+                  alt="The Weathermen Logo"
+                />
+                  <p className="dark:text-body-color-dark mb-12 text-base !leading-relaxed text-body-color sm:text-lg md:text-xl">
                   The new weather forecasting web application where you can stay informed
                   about the weather conditions in your area. See real-time weather data and forecasts, setup location
                   preferences, receive notifications for severe weather alerts and customize your interface.
