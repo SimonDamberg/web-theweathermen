@@ -1,9 +1,8 @@
-import Brands from "@/components/Brands";
 import ScrollUp from "@/components/Common/ScrollUp";
-import Features from "@/components/Features";
 import Hero from "@/components/Hero";
-import Team from "@/components/Team";
 import Navbar from "@/components/Navbar";
+import ProgressData from "@/components/Progress";
+import { Background } from "@/components/Styling/background";
 import { Metadata } from "next";
 
 
@@ -13,15 +12,13 @@ export const metadata: Metadata = {
   // other metadata
 };
 
-export default function Home() {
+export default function Progress() {
   return (
     <>
       <Navbar/>
       <ScrollUp />
-      <Hero />
-      <Features />
-      <Brands />
-      <Team />
+      <Background/>
+      <ProgressData/>
     </>
   )
 }
